@@ -24,9 +24,19 @@ class Accueil extends StatelessWidget{
         backgroundColor: Colors.black,
         centerTitle: true,
       ),
-      body: Image.network('https://www.be-lounge.com/wp-content/uploads/2018/09/lodge-observatoire-hexagonal1.jpg'),
-           
-      
-    );
+      body: Center(
+        child: FlatButton.icon(
+          onPressed: (){
+            print('email envoyé');
+        },
+        color: Colors.blue,
+        icon: Icon(
+          Icons.email
+          ),
+          label: Text(
+            'Send a mail'
+        ))
+        ),
+        ); 
   }
 }
