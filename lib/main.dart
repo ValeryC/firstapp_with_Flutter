@@ -25,32 +25,40 @@ class Accueil extends StatelessWidget{
         centerTitle: true,
       ),
          body: 
-         Column(
-           mainAxisAlignment: MainAxisAlignment.spaceBetween,
-           crossAxisAlignment: CrossAxisAlignment.stretch,
+         Row(
            children:<Widget>[
-             Container(
+            Expanded(
+              child :Container(
                color:Colors.blue,
                padding: EdgeInsets.all(20.0),
                margin:EdgeInsets.all(20.0),
                child: Text(
                  'first'
                ),
+               ),
              ),
-             Container(
+              Expanded(
+              flex:2,
+              child: Image.network('https://www.be-lounge.com/wp-content/uploads/2018/09/lodge-observatoire-hexagonal2.jpg'),
+            ),
+             Expanded(
+              child :Container(
                color:Colors.purple,
                padding: EdgeInsets.all(20.0),
                margin:EdgeInsets.all(20.0),
                child: Text(
                  'second'
                ),
+               ),
              ),
-             Container(
+              Expanded(
+               child :Container(
                color:Colors.orange,
                padding: EdgeInsets.all(20.0),
                margin:EdgeInsets.all(20.0),
                child: Text(
                  'third'
+               ),
                ),
              )
 
