@@ -24,31 +24,51 @@ class Accueil extends StatelessWidget{
         backgroundColor: Colors.black,
         centerTitle: true,
       ),
-      body: Center(
-        child:
-        //r FlatButton.icon(
-        //   onPressed: (){
-        //     print('email envoyé');
-        // },
-        // color: Colors.blue,
-        // icon: Icon(
-        //   Icons.email
-        //   ),
-        //   label: Text(
-        //     'Send a mail'
-        // ))
-        IconButton(
-          onPressed: () {
-            
-          }, 
-          icon: Icon(
-            Icons.email,
-            color: Colors.blue,
-            size:100.0,
-          ),
+         body: 
+         Column(
+           mainAxisAlignment: MainAxisAlignment.spaceBetween,
+           crossAxisAlignment: CrossAxisAlignment.stretch,
+           children:<Widget>[
+             Container(
+               color:Colors.blue,
+               padding: EdgeInsets.all(20.0),
+               margin:EdgeInsets.all(20.0),
+               child: Text(
+                 'first'
+               ),
+             ),
+             Container(
+               color:Colors.purple,
+               padding: EdgeInsets.all(20.0),
+               margin:EdgeInsets.all(20.0),
+               child: Text(
+                 'second'
+               ),
+             ),
+             Container(
+               color:Colors.orange,
+               padding: EdgeInsets.all(20.0),
+               margin:EdgeInsets.all(20.0),
+               child: Text(
+                 'third'
+               ),
+             )
 
-        )
-        ),
-        ); 
+
+           ]
+         )
+      //   Container(
+      //   margin: EdgeInsets.fromLTRB(5, 10, 10, 5),
+      //   padding:EdgeInsets.symmetric(vertical:10.0, horizontal:10.0),
+      //   child: Text (
+      //     'Bonjour',
+      //   style:TextStyle(
+      //     color:Colors.white,
+      //   ),
+      //   ),
+      //   color: Colors.blue,
+      // )
+    );
+
   }
 }
