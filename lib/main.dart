@@ -24,7 +24,7 @@ class Accueil extends StatelessWidget{
         backgroundColor: Colors.black,
         centerTitle: true,
       ),
-      body: Image.asset('assets/lodge2.jpg'),
+      body: Image.network('https://www.be-lounge.com/wp-content/uploads/2018/09/lodge-observatoire-hexagonal1.jpg'),
            
       
     );
